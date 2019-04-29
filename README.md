@@ -1,4 +1,5 @@
 # ele-select-tree
+<<<<<<< HEAD
 
 > 基于vue+element UI的下拉树
 
@@ -19,3 +20,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+基于vue+element UI的下拉树组件
+>>>>>>> a8fc210d44e34343e801218b85522594eaaa1b26
