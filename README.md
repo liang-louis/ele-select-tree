@@ -19,7 +19,22 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-基于vue+element UI的下拉树组件
->>>>>>> a8fc210d44e34343e801218b85522594eaaa1b26
+## 属性
+参数|说明|类型|可选值|默认值
+:-|:-|:-|:-|:-
+v-model|绑定值|String/Number/Array|—|—
+width|输入框宽度，如不指定则自适应容器|String|—|—
+options|选项数据|Array|—|必填
+placeholder|输入框占位符|String|—|"请选择"
+props|树节点配置选项，具体看下表|Object|—|—
+multiple|是否可多选|Boolean|true/false|false
+filterable|是否可过滤|Boolean|true/false|false
+clearable|是否可清空|Boolean|true/false|true
+disabled|是否禁用|Boolean|true/false|false
+
+## props
+参数|说明|类型|可选值|默认值
+:-|:-|:-|:-|:-
+value|指定节点实际值为节点对象的某个属性值|String|—|'value'
+label|指定节点显示值为节点对象的某个属性值|String|—|'label'
+children|指定子树为节点对象的某个属性值|String|—|'children'
