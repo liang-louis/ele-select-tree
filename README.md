@@ -1,5 +1,4 @@
 # ele-select-tree
-<<<<<<< HEAD
 
 > 基于vue+element UI的下拉树
 
