@@ -167,6 +167,9 @@
     height: auto;
     max-height: 274px;
     padding: 0;
+    &.selected {
+      font-weight: normal;
+    }
   }
   .el-tree {
     padding: 12px;
