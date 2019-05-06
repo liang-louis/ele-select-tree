@@ -17,6 +17,7 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+尝试了两种实现方式，推荐第二种
 
 ## 属性(select-tree) 基于el-popper+el-tree+el-input实现
 参数|说明|类型|可选值|默认值
