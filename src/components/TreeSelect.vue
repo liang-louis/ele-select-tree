@@ -1,6 +1,7 @@
 <!--el-select+el-tree -->
 <template>
   <el-select ref="select" :value="showLabel"
+             :size="size"
              :placeholder="placeholder"
              :clearable="clearable"
              :disabled="disabled"
@@ -54,10 +55,7 @@
         type: Boolean,
         default: false
       },
-      size: {
-        type: String,
-        default: ''
-      },
+      size: String,
       multiple: { // 是否可多选
         type: Boolean,
         default: false
