@@ -1,11 +1,17 @@
 <template>
   <div id="app">
     <el-form :model="form" inline>
-      <el-form-item label="单选下拉">
+      <el-form-item label="popper单选下拉">
         <SelectTree v-model="form.value" :options="treeOption"></SelectTree>
       </el-form-item>
-      <el-form-item label="多选下拉">
+      <el-form-item label="popper多选下拉">
         <SelectTree v-model="form.values" :options="treeOption" multiple></SelectTree>
+      </el-form-item>
+      <el-form-item label="select单选下拉">
+        <TreeSelect v-model="form.val" :options="treeOption" filterable></TreeSelect>
+      </el-form-item>
+      <el-form-item label="select多选下拉">
+        <TreeSelect v-model="form.vals" :options="treeOption" multiple filterable></TreeSelect>
       </el-form-item>
     </el-form>
   </div>
@@ -13,14 +19,17 @@
 
 <script>
   import SelectTree from '@/components/SelectTree.vue'
+  import TreeSelect from '@/components/TreeSelect.vue'
 export default {
   name: 'App',
-  components: {SelectTree},
+  components: {SelectTree,TreeSelect},
   data() {
     return {
       form: {
         value:'1',
-        values:['1']
+        values:['1'],
+        val:'1',
+        vals:['1'],
       },
       treeValue: '1',
       treeOption: [
@@ -53,6 +62,42 @@ export default {
             },{
               label: '略略略-2',
               value:'略略略2---',
+            },{
+              label: '略-1',
+              value:'-',
+            },{
+              label: '略-2',
+              value:'2-',
+            },{
+              label: '1',
+              value:'--',
+            },{
+              label: '2',
+              value:'2---',
+            },{
+              label: '略略1',
+              value:'略略--',
+            },{
+              label: '略略2',
+              value:'略略2--',
+            },{
+              label: '略略略1',
+              value:'略略略--',
+            },{
+              label: '略略略2',
+              value:'略略略2--',
+            },{
+              label: '略-1',
+              value:'略---',
+            },{
+              label: '略-2',
+              value:'略2---',
+            },{
+              label: '略略-1',
+              value:'略略---',
+            },{
+              label: '略略-2',
+              value:'略略2---',
             }
           ]
         }

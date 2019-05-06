@@ -1,4 +1,4 @@
-<!-- 树状选择器 -->
+<!-- 树状选择器 el-popover+el-tree+el-input -->
 <template>
   <el-popover
     ref="popover"
@@ -68,7 +68,6 @@
         type: Object,
         default() {
           return {
-            parent: 'parentId',
             value: 'value',
             label: 'label',
             children: 'children',
