@@ -7,7 +7,7 @@
              :disabled="disabled"
              :filterable="filterable" :filter-method="selectFilter"
              @focus="selectFocus"
-             @clear="emitVal('')">
+             @clear="emitVal">
     <el-option :value="showLabel" :label="showLabel">
       <el-tree ref="tree"
                :accordion="accordion"
@@ -121,6 +121,9 @@
       },
       // 提交值
       emitVal(val) {
+        if (!val) {
+          val = this.multiple ? [] : ''
+        }
         this.$emit('input', val)
       },
       // select框获得焦点
