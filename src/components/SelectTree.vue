@@ -32,6 +32,7 @@
       slot="reference"
       ref="input"
       v-model="labelModel"
+      :size="size"
       :clearable="clearable" :readonly="disabled"
       :style="`width: ${width}px`"
       @mouseenter.native="inputHovering = true"
@@ -50,14 +51,18 @@
       value: { // 接收绑定参数
         type: [String, Number, Array],
       },
-      width: String, // 输入框宽度
       options: { // 选项数据
         type: Array,
         required: true,
       },
+      width: String, // 输入框宽度
       placeholder: { // 输入框占位符
         type: String,
         default: '请选择',
+      },
+      size: {
+        type: String,
+        default:''
       },
       props: { // 树节点配置选项
         type: Object,
@@ -110,7 +115,7 @@
     },
     mounted() {
       // 获取输入框宽度同步至树状菜单宽度
-      this.treeWidth = `${(this.width || this.$refs.input.clientWidth) - 24}px`;
+      this.treeWidth = `${(this.width || this.$refs.input.$refs.input.clientWidth) - 24}px`;
     },
     watch: {
       'selectValue'(val,old) {
