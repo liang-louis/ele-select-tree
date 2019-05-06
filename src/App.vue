@@ -28,8 +28,8 @@ export default {
       form: {
         value:'1',
         values:['1'],
-        val:'1',
-        vals:['1'],
+        val:'-',
+        vals:['-'],
       },
       treeValue: '1',
       treeOption: [

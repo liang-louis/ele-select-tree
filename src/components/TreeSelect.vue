@@ -14,7 +14,7 @@
                :props="props"
                :node-key="props.value"
                :show-checkbox="multiple"
-               :default-expanded-keys="defaultExpandedKey"
+               :default-expanded-keys="(multiple && Array.isArray(value)) ? value : [value]"
                :default-checked-keys="(multiple && Array.isArray(value)) ? value : []"
                :expand-on-click-node="false"
                :check-strictly="checkStrictly"
@@ -82,7 +82,6 @@
     },
     data() {
       return {
-        defaultExpandedKey: [],
       }
     },
     computed: {
