@@ -54,3 +54,5 @@ checkStrictly|父子节点选择状态是否不互相关联|Boolean|—|false
 value|指定节点实际值为节点对象的某个属性值|String|—|'value'
 label|指定节点显示值为节点对象的某个属性值|String|—|'label'
 children|指定子树为节点对象的某个属性值|String|—|'children'
+
+[Demo](https://shenwangchuan.github.io/ele-select-tree/dist/)
