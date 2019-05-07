@@ -165,7 +165,6 @@
 <style scoped lang="scss" type="text/scss">
   .el-select-dropdown__item {
     height: auto;
-    max-height: 274px;
     padding: 0;
     &.selected {
       font-weight: normal;
