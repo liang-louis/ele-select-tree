@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <el-form :model="form" inline>
-      <el-form-item label="popper单选下拉">
+      <el-form-item label="popper单选">
         <SelectTree v-model="form.value" :options="treeOption"></SelectTree>
       </el-form-item>
-      <el-form-item label="popper多选下拉">
+      <el-form-item label="popper多选">
         <SelectTree v-model="form.values" :options="treeOption" multiple></SelectTree>
       </el-form-item>
-      <el-form-item label="select单选下拉">
+      <el-form-item label="select单选">
         <TreeSelect v-model="form.val" :options="treeOption" filterable></TreeSelect>
       </el-form-item>
-      <el-form-item label="select多选下拉">
+      <el-form-item label="select多选">
         <TreeSelect v-model="form.vals" :options="treeOption" multiple filterable></TreeSelect>
       </el-form-item>
     </el-form>
@@ -32,7 +32,7 @@ export default {
         vals:['-'],
       },
       treeValue: '1',
-      treeOption: [
+      treeOption: [ //测试数据
         {
           label: '一',
           value:'1',
