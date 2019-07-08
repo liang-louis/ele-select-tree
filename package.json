@@ -2,7 +2,7 @@
   "name": "ele-select-tree",
   "version": "1.0.0",
   "description": "基于vue+element UI的下拉树",
-  "author": "luotingting <1244279250@qq.com>",
+  "author": "shenwangchuan",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
